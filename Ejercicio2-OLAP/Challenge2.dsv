@@ -1,0 +1,177 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="42d99c51-88af-44cc-be08-109db1af1c64" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Challenge2</ID>
+  <Name>Challenge2</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Challenge2</DataSourceID>
+  <Schema>
+    <xs:schema id="Challenge2" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Challenge2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="fccb7ad6-748e-47c9-bab9-65700955137b">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Country" msprop:design-time-name="6660cd87-dcf7-45e3-98b7-3a3416dc9c07" msprop:DbTableName="Country" msprop:FriendlyName="Country" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="id" msprop:design-time-name="5999fe04-d271-4e0d-a598-5d5da7f8ca9d" msprop:DbColumnName="id" msprop:FriendlyName="id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="country_name" msprop:design-time-name="99728b25-e220-412d-802e-345a429c9760" msprop:DbColumnName="country_name" msprop:FriendlyName="country_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Department" msprop:design-time-name="a4a9eb46-f378-4690-b461-f4dbb1eb58a2" msprop:DbTableName="Department" msprop:FriendlyName="Department" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="country_id" msprop:design-time-name="51768ce8-82c1-484a-934e-40394d992978" msprop:DbColumnName="country_id" msprop:FriendlyName="country_id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="department_name" msprop:design-time-name="3b769c13-572c-492a-b4e4-3bc8c635c3ce" msprop:DbColumnName="department_name" msprop:FriendlyName="department_name" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="id" msprop:design-time-name="30f8f010-cfd2-40d7-bdcb-aab81d8363c7" msprop:DbColumnName="id" msprop:FriendlyName="id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_MoveFact" msprop:design-time-name="263f7e94-adec-45c2-96b3-a5a1fbd6b90b" msprop:DbTableName="MoveFact" msprop:FriendlyName="MoveFact" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="country_id" msprop:design-time-name="1a216f16-ce0f-412d-aa1d-47851500ceb4" msprop:DbColumnName="country_id" msprop:FriendlyName="country_id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="department_id" msprop:design-time-name="8cde5820-be02-43b3-a685-a0e0379ddc31" msprop:DbColumnName="department_id" msprop:FriendlyName="department_id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="date" msprop:design-time-name="18b67a76-6aa1-46bb-a69a-0229ac2172af" msprop:DbColumnName="date" msprop:FriendlyName="date" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="retail_and_recreation_percent_change_from_baseline" msprop:design-time-name="46078507-7cd1-41e3-847a-a809655d5a47" msprop:DbColumnName="retail_and_recreation_percent_change_from_baseline" msprop:FriendlyName="retail_and_recreation_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="grocery_and_pharmacy_percent_change_from_baseline" msprop:design-time-name="94af9168-a071-45af-842e-54990ef86b6c" msprop:DbColumnName="grocery_and_pharmacy_percent_change_from_baseline" msprop:FriendlyName="grocery_and_pharmacy_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="parks_percent_change_from_baseline" msprop:design-time-name="94750e81-8be5-475a-80f7-72fed1f89500" msprop:DbColumnName="parks_percent_change_from_baseline" msprop:FriendlyName="parks_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="transit_stations_percent_change_from_baseline" msprop:design-time-name="c35a4cee-8f31-4cce-afb5-72de30f94e44" msprop:DbColumnName="transit_stations_percent_change_from_baseline" msprop:FriendlyName="transit_stations_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="workplaces_percent_change_from_baseline" msprop:design-time-name="4133c78d-a994-4750-8ffc-becb41a8838f" msprop:DbColumnName="workplaces_percent_change_from_baseline" msprop:FriendlyName="workplaces_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="residential_percent_change_from_baseline" msprop:design-time-name="0b0b85d1-c00a-43e2-b3b8-bd9855d27f45" msprop:DbColumnName="residential_percent_change_from_baseline" msprop:FriendlyName="residential_percent_change_from_baseline" type="xs:int" minOccurs="0" />
+                  <xs:element name="time_id" msprop:design-time-name="59741e64-71d4-4358-997f-31518cb2ae82" msprop:DbColumnName="time_id" msprop:FriendlyName="time_id" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Time" msprop:design-time-name="74092ddf-8673-4ff9-b518-48c507f96267" msprop:DbTableName="Time" msprop:FriendlyName="Time" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="value" msprop:design-time-name="cb8e60ac-d214-4599-b9df-2e3fadd4b6e9" msprop:DbColumnName="value" msprop:FriendlyName="value" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="time_id" msprop:design-time-name="6738939d-b6b4-42dd-a4a1-09eab1cac8df" msprop:DbColumnName="time_id" msprop:FriendlyName="time_id">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Country" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Department_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Department" />
+          <xs:field xpath="id" />
+        </xs:unique>
+        <xs:unique name="dbo_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Time" />
+          <xs:field xpath="time_id" />
+        </xs:unique>
+        <xs:keyref name="fact_department" refer="dbo_Department_Constraint1">
+          <xs:selector xpath=".//dbo_MoveFact" />
+          <xs:field xpath="department_id" />
+        </xs:keyref>
+        <xs:keyref name="fact_country" refer="Constraint1">
+          <xs:selector xpath=".//dbo_MoveFact" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+        <xs:keyref name="fact_time" refer="dbo_Time_Constraint1">
+          <xs:selector xpath=".//dbo_MoveFact" />
+          <xs:field xpath="time_id" />
+        </xs:keyref>
+        <xs:keyref name="department_country" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Department" />
+          <xs:field xpath="country_id" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Challenge2 xmlns="" />
+  </Schema>
+</DataSourceView>
